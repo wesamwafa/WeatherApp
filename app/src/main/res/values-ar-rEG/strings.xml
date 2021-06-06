@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Weather</string>
+    <string name="humidity">الرطوبة :</string>
+    <string name="feelslike">تشعر انها :</string>
+    <string name="clouds">السحب :</string>
+    <string name="pressure">الضغط :</string>
+    <string name="windspeed">"سرعة الرياح : "</string>
+    <string name="enable_now">تفعيل الان</string>
+    <string name="kmh">كم/س</string>
+    <string name="mileh">ميل/س</string>
+    <string name="settings">الاعدادات</string>
+    <string name="weatherloc">مكان الطقس</string>
+    <string name="deviceloc">استخدم موقع الهاتف</string>
+    <string name="userloc">الموقع</string>
+    <string name="allowtheapp">السماح للتطبيق بايجاد موقعك</string>
+    <string name="maploc">"اختر الموقع الذي تريد عرضه "</string>
+    <string name="weatheralert">تنبيهات الطقس</string>
+    <string name="allowalert">السماح للهاتف بتنبيهك بتنبيهات الطقس</string>
+    <string name="alarmsound">صوت التنبيه</string>
+    <string name="choosealarm">اختر صوت للتنبيه او لا</string>
+    <string name="prefre">التفضيلات</string>
+    <string name="unitsys">وحدات القياس</string>
+    <string name="lang">اللغة</string>
+    <string name="today">اليوم</string>
+    <string name="favs">المفضلة</string>
+    <string name="alerts">التنبيهات</string>
+    <string name="citydelete">هل تريد مسح هذه المدينه ؟</string>
+    <string name="alarmdelete">هل تريد مسح هذا التنبيه ؟</string>
+    <string name="alert">تنبيه</string>
+    <string name="nodangerous">لا يوجد تحذيرات حطيرة الان</string>
+
+
+</resources>

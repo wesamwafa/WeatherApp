@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/weatherloc">
+        <SwitchPreference
+            android:key="USE_DEVICE_LOCATION"
+            android:title="@string/deviceloc"
+            android:summary="@string/allowtheapp"
+            android:defaultValue="true"
+            android:disableDependentsState="true"/>
+
+        <Preference
+            android:id="@+id/tttttttt"
+            android:key="CUSTOM_LOCATION"
+            android:title="@string/userloc"
+            android:summary="@string/maploc"
+            android:defaultValue=""
+            android:dependency="USE_DEVICE_LOCATION"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/weatheralert">
+    <SwitchPreference
+        android:key="WEATHER_ALERTS"
+        android:title="@string/weatheralert"
+        android:summary="@string/allowalert"
+        android:defaultValue="true"
+        />
+        <SwitchPreference
+            android:key="WEATHER_ALARMS"
+            android:title="@string/alarmsound"
+            android:summary="@string/choosealarm"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/prefre">
+        <ListPreference
+            android:key="UNIT_SYSTEM"
+            android:title="@string/unitsys"
+            android:summary="%s"
+            android:defaultValue="METRIC"
+            android:entries="@array/unitSystemEntries"
+            android:entryValues="@array/unitSystemValues"/>
+    </PreferenceCategory>
+
+        <ListPreference
+            android:key="LANGUAGE_SYSTEM"
+            android:title="@string/lang"
+            android:summary="%s"
+            android:defaultValue="ENGLISH"
+            android:entries="@array/languageSystemEntries"
+            android:entryValues="@array/languageSystemValues"/>
+
+
+</PreferenceScreen>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/currentWeatherFragment">
+
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.MyWeather.UI.Weather.CurrentWeatherFragment"
+        android:label="current_weather_fragment"
+        tools:layout="@layout/current_weather_fragment" />
+    <fragment
+        android:id="@+id/favsFragment"
+        android:name="com.MyWeather.UI.FavsFragment.FavsFragment"
+        android:label="favs_fragment"
+        tools:layout="@layout/favs_fragment" >
+        <action
+            android:id="@+id/action_favsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_favsFragment_to_detailedCityFragment"
+            app:destination="@id/detailedCityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.MyWeather.UI.Alerts.AlertsFragment"
+        android:label="alerts_fragment"
+        tools:layout="@layout/alerts_fragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.MyWeather.UI.FavsFragment.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_favsFragment"
+            app:destination="@id/favsFragment"
+            app:popUpTo="@id/currentWeatherFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.MyWeather.UI.Settings.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_mapsFragmentSettings"
+            app:destination="@id/mapsFragmentSettings" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragmentSettings"
+        android:name="com.MyWeather.UI.Settings.MapsFragmentSettings"
+        android:label="fragment_maps_settings"
+        tools:layout="@layout/fragment_maps_settings" >
+        <action
+            android:id="@+id/action_mapsFragmentSettings_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:popUpTo="@id/currentWeatherFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedCityFragment"
+        android:name="com.MyWeather.UI.FavsFragment.DetailedCityFragment"
+        android:label="fragment_detailed_city"
+        tools:layout="@layout/fragment_detailed_city" />
+
+
+</navigation>
